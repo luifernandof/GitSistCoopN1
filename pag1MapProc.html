@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>SistcoopN1</title>
+    <link rel="stylesheet" href="stylepg.css">
+  </head>
+  <body>
+
+    <div class="header">
+        <h1> SistcoopN1</h1>
+        <p> Provedora de Serviços para cooperativas de crédito </p>
+    </div>
+    <h2><a href="login.html">Login</a></h2>
+    <div class="top-nav">
+        <a href="index.html">Início</a>
+        <a href="pag1.html">RelacCoop</a>
+        <a href="pag2.html">AçõesComerciais</a>
+        <a href="pag3.html">Credito</a>
+        <a href="pag4.html">GestãoTI</a>
+        <a href="pag5.html">GestãoFinanceira</a>
+        <a href="pag6.html">AuditoriaeControles</a>
+        <a href="pag7.html">GestãoProdutos</a>
+        <a href="pag8.html">GestãoEstrategica</a>
+        <a href="pag9.html">GestãoOperacional</a>	  
+    </div>
+
+  <div class="row">
+    <div class="modulo">
+      <h1>Formulário de Mapeamento do Processo</h1>
+    </div>
+      <div class="leftcolumn">
+        <div class="form">
+            <form>
+              <label for="NomeCoop">Nome Cooperativa:</label><br>
+              <input type="text" id="NomeCoop" name="NomeCoop"><br>
+              <label for="CodCoop">Código Cooperativa:</label><br>
+              <input type="text" id="CodCoop" name="CodCoop"><br>
+      
+                  <select class="form-control" id="ListProcessos" name="ProcessosManuais">
+                  <option>Processos Manuais</option> 
+                  <option>Abertura de Contas</option> 
+                  <option>Análise de Crédito</option>
+                  <option>Contabilidade / Lançamento de Despesas</option>
+                  <option>Comunicação</option>
+                  </select>
+              
+              <label for="CodProjCoop">Código Projeto:</label><br>
+              <input type="text" id="CodProjCoop" name="CodProjCoop"><br><br>
+              <label for="DtIniProjCoop">Data Início:</label><br>
+              <input type="text" id="DtIniProjCoop" name="DtIniProjCoop"><br><br>
+              <label for="PrevHorasPorjCoop">Previsão de Horas Projeto:</label><br>
+              <input type="text" id="PrevHorasPorjCoop" name="PrevHorasPorjCoop"><br><br>
+              <input type="submit" value="GerarPropostaProjeto">
+                <br />
+                <input type="button" onclick="window.location.href='pag1.html';" value="retornar" />
+                <input type="reset" value="Limpar">
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+  <hr>
+  <div class="footer">
+    <p>Endereço</p>
+  <p>Telefone</p>
+  <p>E-mail</p>
+  </div>
+</html>

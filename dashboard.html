@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SistcoopN1 Dashboard</title>
+    <script src="https://use.fontawesome.com/590ef3f991.js"></script>
+    <link rel="stylesheet" href="styledash.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-apple" aria-hidden="true"></i></span>
+                <span class="title"><h2>SistcoopN1 Dash</h2></span>
+            </a>
+          </li>
+          <li>
+            <a href="/index.html">
+              <span class="icon"
+                ><i class="fa fa-home" aria-hidden="true"></i
+              ></span>
+              <span class="title">Cooperativa ABC</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-users" aria-hidden="true"></i
+              ></span>
+              <span class="title">ResultadoFinanceiro</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-comment" aria-hidden="true"></i
+              ></span>
+              <span class="title">Mensagens</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-question-circle" aria-hidden="true"></i
+              ></span>
+              <span class="title">Ajuda</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-cog" aria-hidden="true"></i
+              ></span>
+              <span class="title">Configurações</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-unlock-alt" aria-hidden="true"></i
+              ></span>
+              <span class="title">Senha</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <span class="icon"
+                ><i class="fa fa-sign-out" aria-hidden="true"></i
+              ></span>
+              <span class="title">Sair</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main">
+          <div class="topbar">
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <div class="search">
+                <label for="">
+                    <input type="text" placeholder="Search here">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </label>
+            </div>
+            <div class="user">
+                <img style="object-fit: cover;width: 50px;height: 50px;" src="asstes/user.jpg">
+            </div>
+          </div>
+
+          <div class="cardBox">
+            <div class="card">
+              <div>
+                <div class="numbers">667</div>
+                <div class="cardName">Lista Cooperados</div>
+              </div>
+              <div class="iconBox">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="numbers">88</div>
+                <div class="cardName">Operaçoes Atraso</div>
+              </div>
+              <div class="iconBox">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="numbers">1.034</div>
+                <div class="cardName">Notificações</div>
+              </div>
+              <div class="iconBox">
+                <i class="fa fa-comment" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="numbers">R$ 6.060</div>
+                <div class="cardName">Resultado liquido</div>
+              </div>
+              <div class="iconBox">
+                <i class="fa fa-usd" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="details">
+
+            <div class="recentOrders">
+              <div class="cardHeader">
+                <h2>Maiores Operações</h2>
+                <a href="#" class="btn">Ver todos</a>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <td>Nome</td>
+                    <td>Valor</td>
+                    <td>LinhaCredito</td>
+                    <td>Status</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Jose da Silva</td>
+                    <td>R$ 90.400</td>
+                    <td>Empréstimo Simples</td>
+                    <td><span class="status delivered">Em Ser</span></td>
+                  </tr>
+                  <tr>
+                    <td>Maria da Silva</td>
+                    <td>R$ 87.200</td>
+                    <td>Empréstimo Simples</td>
+                    <td><span class="status pending">Atraso D+30</span></td>
+                  </tr>
+                  <tr>
+                    <td>Jose de Oliveira</td>
+                    <td>R$ 75.300</td>
+                    <td>Renegociação</td>
+                    <td><span class="status return">Atraso D+90</span></td>
+                  </tr>
+                  <tr>
+                    <td>Joana Machado</td>
+                    <td>R$ 62.400</td>
+                    <td>Empréstimo Simples</td>
+                    <td><span class="status inprogress">Atraso D+5</span></td>
+                  </tr>
+                  <tr>
+                    <td>João da Silva</td>
+                    <td>R$ 61.400</td>
+                    <td>Renegociação</td>
+                    <td><span class="status delivered">Em Ser</span></td>
+                  </tr>
+                  <tr>
+                    <td>Maria Pereira</td>
+                    <td>R$ 57.900</td>
+                    <td>Empréstimo Simples</td>
+                    <td><span class="status pending">Atraso D+20</span></td>
+                  </tr>
+                  <tr>
+                    <td>Alexandre de Oliveira</td>
+                    <td>R$ 55.800</td>
+                    <td>Renegociação</td>
+                    <td><span class="status return">Atraso D+90</span></td>
+                  </tr>
+                  <tr>
+                    <td>Roberto Rodrigues</td>
+                    <td>R$ 53.200</td>
+                    <td>Empréstimo Simples</td>
+                    <td><span class="status inprogress">Atraso D+5</span></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+
+            <div class="recentCustomers">
+              <div class="cardHeader">
+                <h2>Novos Cooperados</h2>
+                <a href="#" class="btn">Ver Todos</a>
+              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="asstes/user1.jpeg"></div></td>
+                    <td><h4>David Andre<br><span>02/01</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="asstes/user2.jpeg"></div></td>
+                    <td><h4>Lena Machado<br><span>08/12</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="asstes/user3.jpeg"></div></td>
+                    <td><h4>Maria Ives<br><span>04/12</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="asstes/user4.jpeg"></div></td>
+                    <td><h4>Sergio Jose<br><span>26/11</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="asstes/user5.jpeg"></div></td>
+                    <td><h4>Marcelo Rocha<br><span>15/11</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="asstes/user6.jpeg"></div></td>
+                    <td><h4>Simone Jose<br><span>01/11</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="asstes/user7.jpeg"></div></td>
+                    <td><h4>Rosa Silva<br><span>08/10</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="asstes/user8.jpeg"></div></td>
+                    <td><h4>Felipe Andre<br><span>06/10</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="asstes/user9.jpeg"></div></td>
+                    <td><h4>Maria Jose<br><span>28/09</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="asstes/user10.jpeg"></div></td>
+                    <td><h4>Josias Andre<br><span>25/09</span></h4></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          
+          </div>
+
+
+      </div>
+
+    </div>
+
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle')
+            let navigation = document.querySelector('.navigation')
+            let main = document.querySelector('.main')
+            toggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+    </script>
+  </body>
+</html>
